@@ -130,3 +130,4 @@ cap.release()
 cv2.destroyAllWindows()
 print("Saved sample keypoints to collected_keypoints.json")
 
+print()
