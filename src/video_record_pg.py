@@ -32,7 +32,10 @@ def get_next_filename(folder, base_name, extension=".avi"):
 
 def record_video():
     # Configuration
-    VIDEO_FOLDER = "video"
+    # Always store recordings under the repo's data/video directory (relative to this file)
+    VIDEO_FOLDER = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "data", "video")
+    )
 
     print("--- Video Recording Utility ---")
 
